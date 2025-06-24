@@ -1,121 +1,207 @@
-// src/components/Projects.jsx
+import React from 'react';
+
 export default function Projects() {
   return (
-    <section id="projects" className="py-16 bg-gray-900 text-white fade-in-up" style={{ animationDelay: '0.5s' }}>
-      <div className="max-w-6xl mx-auto px-4">
+    <section id="projects" className="py-16 bg-gray-900 text-white">
+      <div className="max-w-6xl mx-auto px-6">
+        <h2 className="text-4xl font-bold mb-12 text-center">Мои проекты</h2>
 
-        {/* Заголовок */}
-        <h2 className="text-3xl font-bold mb-6 text-center">Мои проекты</h2>
-        <p className="text-center text-gray-400 mb-12">
-          Вот некоторые из моих работ в разных категориях
-        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-        {/* Категория: Веб-сайты */}
-        <div className="mb-12">
-          <h3 className="text-2xl font-semibold mb-6 text-blue-400">🖥 Веб-сайты</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            
-            {/* Проект 1 */}
-            <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition">
-              <h4 className="text-xl font-semibold mb-2">Vite + React сайт</h4>
-              <p className="text-gray-400 mb-4">
-                Первый сайт на современном стеке — быстро запускается, адаптивный
-              </p>
-              <a href="#" className="text-blue-500 hover:underline">Подробнее →</a>
+          {/* Vite + React сайт */}
+          <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition group">
+            <div className="flex items-center gap-2 text-blue-400 mb-4">
+              <span className="text-xl">🚀</span>
+              <strong>Vite + React сайт</strong>
             </div>
-
-            {/* Проект 2 */}
-            <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition">
-              <h4 className="text-xl font-semibold mb-2">Сайт-портфолио</h4>
-              <p className="text-gray-400 mb-4">
-                Персональный сайт для демонстрации навыков и проектов
-              </p>
-              <a href="#" className="text-blue-500 hover:underline">Подробнее →</a>
-            </div>
-
-            {/* Проект 3 */}
-            <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition">
-              <h4 className="text-xl font-semibold mb-2">Контактная форма</h4>
-              <p className="text-gray-400 mb-4">
-                Возможность связи напрямую через сайт
-              </p>
-              <a href="#" className="text-blue-500 hover:underline">Подробнее →</a>
-            </div>
-
-            {/* Проект 4 */}
-            <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition">
-              <h4 className="text-xl font-semibold mb-2">CRM-панель</h4>
-              <p className="text-gray-400 mb-4">
-                Управление клиентами и заказами
-              </p>
-              <a href="#" className="text-blue-500 hover:underline">Подробнее →</a>
-            </div>
-
-            {/* Проект 5 */}
-            <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition">
-              <h4 className="text-xl font-semibold mb-2">React UI компоненты</h4>
-              <p className="text-gray-400 mb-4">
-                Переиспользуемые кнопки, модалки, формы
-              </p>
-              <a href="#" className="text-blue-500 hover:underline">Подробнее →</a>
-            </div>
-
-            {/* Проект 6 */}
-            <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition">
-              <h4 className="text-xl font-semibold mb-2">API интеграция</h4>
-              <p className="text-gray-400 mb-4">
-                Работа с внешними API и базами данных
-              </p>
-              <a href="#" className="text-blue-500 hover:underline">Подробнее →</a>
-            </div>
-
+            <p className="text-gray-300 mb-4">
+              Быстрый, адаптивный сайт на современном стеке.
+            </p>
+            <a 
+              href="https://t.me/maksahbot?start=react-site" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-purple-400 hover:text-purple-300 inline-flex items-center gap-1"
+            >
+              💬 Написать в Telegram →
+            </a>
           </div>
-        </div>
 
-        {/* Категория: Боты / ИИ */}
-        <div className="mb-12">
-          <h3 className="text-2xl font-semibold mb-6 text-purple-400">🤖 Боты и ИИ</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-            {/* Проект 7 */}
-            <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition">
-              <h4 className="text-xl font-semibold mb-2">Telegram-бот</h4>
-              <p className="text-gray-400 mb-4">
-                Автоматизация задач через Telegram
-              </p>
-              <a href="#" className="text-blue-500 hover:underline">Подробнее →</a>
+          {/* Сайт-портфолио */}
+          <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition group">
+            <div className="flex items-center gap-2 text-blue-400 mb-4">
+              <span className="text-xl">🎨</span>
+              <strong>Сайт-портфолио</strong>
             </div>
-
-            {/* Проект 8 */}
-            <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition">
-              <h4 className="text-xl font-semibold mb-2">ИИ-чатбот</h4>
-              <p className="text-gray-400 mb-4">
-                Чат с ИИ через OpenAI API
-              </p>
-              <a href="#" className="text-blue-500 hover:underline">Подробнее →</a>
-            </div>
-
-            {/* Проект 9 */}
-            <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition">
-              <h4 className="text-xl font-semibold mb-2">WhatsApp бот</h4>
-              <p className="text-gray-400 mb-4">
-                Для автоматизации диалогов и ответов
-              </p>
-              <a href="#" className="text-blue-500 hover:underline">Подробнее →</a>
-            </div>
-
-            {/* Проект 10 */}
-            <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition">
-              <h4 className="text-xl font-semibold mb-2">Discord бот</h4>
-              <p className="text-gray-400 mb-4">
-                Модерация серверов и автоматизация команд
-              </p>
-              <a href="#" className="text-blue-500 hover:underline">Подробнее →</a>
-            </div>
-
+            <p className="text-gray-300 mb-4">
+              Персональный сайт для демонстрации навыков и проектов.
+            </p>
+            <a 
+              href="https://t.me/maksahbot?start=portfolio" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-purple-400 hover:text-purple-300 inline-flex items-center gap-1"
+            >
+              💬 Написать в Telegram →
+            </a>
           </div>
-        </div>
 
+          {/* Контактная форма */}
+          <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition group">
+            <div className="flex items-center gap-2 text-blue-400 mb-4">
+              <span className="text-xl">✉️</span>
+              <strong>Контактная форма</strong>
+            </div>
+            <p className="text-gray-300 mb-4">
+              Возможность связи напрямую через сайт.
+            </p>
+            <a 
+              href="https://t.me/maksahbot?start=form" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-purple-400 hover:text-purple-300 inline-flex items-center gap-1"
+            >
+              💬 Написать в Telegram →
+            </a>
+          </div>
+
+          {/* CRM-панель */}
+          <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition group">
+            <div className="flex items-center gap-2 text-blue-400 mb-4">
+              <span className="text-xl">📊</span>
+              <strong>CRM-панель</strong>
+            </div>
+            <p className="text-gray-300 mb-4">
+              Управление клиентами и заказами.
+            </p>
+            <a 
+              href="https://t.me/maksahbot?start=crm" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-purple-400 hover:text-purple-300 inline-flex items-center gap-1"
+            >
+              💬 Написать в Telegram →
+            </a>
+          </div>
+
+          {/* React UI компоненты */}
+          <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition group">
+            <div className="flex items-center gap-2 text-blue-400 mb-4">
+              <span className="text-xl">🧩</span>
+              <strong>React UI компоненты</strong>
+            </div>
+            <p className="text-gray-300 mb-4">
+              Переиспользуемые кнопки, модалки, формы.
+            </p>
+            <a 
+              href="https://t.me/maksahbot?start=ui-components" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-purple-400 hover:text-purple-300 inline-flex items-center gap-1"
+            >
+              💬 Написать в Telegram →
+            </a>
+          </div>
+
+          {/* API интеграция */}
+          <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition group">
+            <div className="flex items-center gap-2 text-blue-400 mb-4">
+              <span className="text-xl">🔌</span>
+              <strong>API Интеграция</strong>
+            </div>
+            <p className="text-gray-300 mb-4">
+              Работа с внешними API и базами данных.
+            </p>
+            <a 
+              href="https://t.me/maksahbot?start=api-integration" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-purple-400 hover:text-purple-300 inline-flex items-center gap-1"
+            >
+              💬 Написать в Telegram →
+            </a>
+          </div>
+
+          {/* Telegram-бот */}
+          <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition group">
+            <div className="flex items-center gap-2 text-blue-400 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="inline-block w-6 h-6">
+                <path d="M22 2L11 13"></path>
+                <path d="M22 2l-7 20-4-9-9-4 20-7z"></path>
+              </svg>
+              <strong>Telegram-бот</strong>
+            </div>
+            <p className="text-gray-300 mb-4">
+              Автоматизация связи с клиентами через Telegram.
+            </p>
+            <a 
+              href="https://t.me/maksahbot?start=tg-bot" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-purple-400 hover:text-purple-300 inline-flex items-center gap-1"
+            >
+              💬 Написать в Telegram →
+            </a>
+          </div>
+
+          {/* ИИ-чатбот */}
+          <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition group">
+            <div className="flex items-center gap-2 text-blue-400 mb-4">
+              <span className="text-xl">🧠</span>
+              <strong>ИИ-чатбот</strong>
+            </div>
+            <p className="text-gray-300 mb-4">
+              Чат с ИИ через OpenAI / GigaChat.
+            </p>
+            <a 
+              href="https://t.me/maksahbot?start=ai-chatbot" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-purple-400 hover:text-purple-300 inline-flex items-center gap-1"
+            >
+              💬 Написать в Telegram →
+            </a>
+          </div>
+
+          {/* WhatsApp бот */}
+          <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition group">
+            <div className="flex items-center gap-2 text-blue-400 mb-4">
+              <span className="text-xl">💬</span>
+              <strong>WhatsApp бот</strong>
+            </div>
+            <p className="text-gray-300 mb-4">
+              Для автоматизации диалогов и ответов.
+            </p>
+            <a 
+              href="https://t.me/maksahbot?start=whatsapp-bot" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-purple-400 hover:text-purple-300 inline-flex items-center gap-1"
+            >
+              💬 Написать в Telegram →
+            </a>
+          </div>
+
+          {/* Discord бот */}
+          <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition group">
+            <div className="flex items-center gap-2 text-blue-400 mb-4">
+              <span className="text-xl">🎮</span>
+              <strong>Discord бот</strong>
+            </div>
+            <p className="text-gray-300 mb-4">
+              Команда модерации серверов и автоматизации.
+            </p>
+            <a 
+              href="https://t.me/maksahbot?start=discord-bot" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-purple-400 hover:text-purple-300 inline-flex items-center gap-1"
+            >
+              💬 Написать в Telegram →
+            </a>
+          </div>
+
+        </div>
       </div>
     </section>
   );
